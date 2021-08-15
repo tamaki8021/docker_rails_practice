@@ -50,3 +50,7 @@ $ docker-compose up -d
 ```
 $ docker-compose down
 ```
+
+## Dockerでherokuへのデプロイの参考
+
+https://zenn.dev/tama8021/scraps/7119380d7fb456

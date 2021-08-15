@@ -1,0 +1,4 @@
+# docker-composeでrailsを手元で動かしている状態等でdocker buildし直してデプロイしてしまうと、railsプロジェクト内のtmp/pids/server.pidが残ったままになってしまい本番環境でrailsサーバーが起動しないという自体がよく起こるので、.dockerignoreにtmp/pids/server.pidを登録してbuildする際にdocker デーモンに送らないようにします。
+
+# docker-compose.ymlのコマンドで削除のコマンドを設定しているからいらないかも
+./tmp/pids/server.pid
