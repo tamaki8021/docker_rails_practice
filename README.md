@@ -51,6 +51,26 @@ $ docker-compose up -d
 $ docker-compose down
 ```
 
+## Dockerコマンド
+
+```
+// rails cを行う
+$ docker exec -it Dockerコンテナ名
+> bundle exec rails c
+
+// rails db:migrate
+$ docker-compose run web rails db:migrate
+
+```
+
+## 開発環境を配る(clone)
+
+```
+$ docker-compose build
+$ docker-compose run web bundle exec rake db:setup
+$ docker-compose up
+```
+
 ## Dockerでherokuへのデプロイの参考
 
 https://zenn.dev/tama8021/scraps/7119380d7fb456
