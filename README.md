@@ -55,7 +55,7 @@ $ docker-compose down
 
 ```
 // rails cを行う
-$ docker exec -it Dockerコンテナ名
+$ docker exec -it Dockerコンテナ名 bash
 > bundle exec rails c
 
 // rails db:migrate
