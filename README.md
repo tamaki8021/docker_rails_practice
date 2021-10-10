@@ -74,3 +74,34 @@ $ docker-compose up
 ## Dockerでherokuへのデプロイの参考
 
 https://zenn.dev/tama8021/scraps/7119380d7fb456
+
+## railsコマンド
+
+```
+$ rails g controller Users new
+  create  app/controllers/users_controller.rb
+    route  get 'users/new'
+  invoke  erb
+  create    app/views/users
+  create    app/views/users/new.html.erb
+  invoke  test_unit
+  create    test/controllers/users_controller_test.rb
+  invoke  helper
+  create    app/helpers/users_helper.rb
+  invoke    test_unit
+  invoke  assets
+  invoke    coffee
+  create      app/assets/javascripts/users.coffee
+  invoke    scss
+  create      app/assets/stylesheets/users.scss
+```
+
+```
+$ rails g model User name:string email:string
+  invoke  active_record
+  create    db/migrate/20160523010738_create_users.rb
+  create    app/models/user.rb
+  invoke    test_unit
+  create      test/models/user_test.rb
+  create      test/fixtures/users.yml
+```
