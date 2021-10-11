@@ -10,5 +10,13 @@
   <%= @user.email %>
 </p>
 
+<p>
+  <%= @user.created_at %>
+  <%= @user.updated_at %>
+  <strong>
+    <%= Time.now %>
+  </strong>
+</p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
