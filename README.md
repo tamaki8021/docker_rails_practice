@@ -61,6 +61,8 @@ $ docker exec -it Dockerコンテナ名 bash
 // rails db:migrate
 $ docker-compose run web rails db:migrate
 
+// log
+$ docker-compose logs -f
 ```
 
 ## 開発環境を配る(clone)
