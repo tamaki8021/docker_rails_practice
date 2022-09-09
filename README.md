@@ -9,7 +9,7 @@ source 'https://rubygems.org'
 gem 'rails', '~> 6.1.4'
 ```
 
-2. railsアプリの作成
+2. railsアプリの作成(MySQLの場合)
 
 ```
 $ docker-compose run web rails new . --force --database=mysql
